@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-[#e7e7e7] text-[#292727]
+}
+
+body.dark {
+	@apply bg-[#2d2d2d] text-[#B9B7B7]
+}
+
+.nav {
+	@apply text-[#B9B7B7]
+}
