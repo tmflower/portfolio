@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import { Transition } from '@headlessui/react'
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,7 +22,7 @@ import carehub from "./images/carehub.png";
 const Artifacts: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
   return (
     <div className="flex flex-col items-center pb-24">
-      <h1 className=" text-4xl md:text-7xl text-center font-bold mb-6">
+      <h1 className=" text-4xl md:text-7xl text-center mb-6">
         My Work
       </h1>
       <div className="w-full flex flex-col items-center">
@@ -104,7 +103,7 @@ const Artifacts: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
             </div>
           </div>
         </Artifact>
-		<Button onClick={goHome} className="border-none md:text-xl">
+		<Button onClick={goHome} className="">
           ← Back
         </Button>
       </div>

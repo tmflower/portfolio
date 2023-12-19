@@ -15,7 +15,7 @@ const Button: FunctionComponent<ButtonProps> = ({
 	return (
 		<button
 		onClick={onClick}
-		className={`button border-2 border-[#2d2d2d] dark:border-[#B9B7B7] hover:bg-[#b56576]/[.6] rounded-full px-4 py-1 mt-4 mb-8 + ${className}`}
+		className={`md:text-3xl border-none rounded-full px-4 py-1 mt-4 mb-8 hover:-translate-x-2 + hover:scale-105 ${className}`}
 	>
 		{children}
 	</button>

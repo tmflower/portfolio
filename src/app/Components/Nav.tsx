@@ -1,6 +1,5 @@
 import { FunctionComponent } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 import Linkedin from "./images/Linkedin.svg";
 import Github from "./images/Github.svg";
@@ -14,7 +13,7 @@ const Nav: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
       <li>
         <button
           onClick={goHome}
-          className="flex flex-row items-center text-sm md:text-2xl font-carter"
+          className="flex flex-row items-center text-sm md:text-2xl font-carter hover:scale-105"
         >
           <Image
             src={Flower}
