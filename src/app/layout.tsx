@@ -6,23 +6,7 @@ export const metadata: Metadata = {
   title: 'Tina Flower portfolio'
 }
 
-export const josefin = Josefin_Sans({
-	subsets: ['latin'],
-	weight: ['400', '700'],
-	variable: '--font-josefin',
-});
-
-export const advent = Advent_Pro({
-	subsets: ['latin'],
-  display: 'swap',
-});
-
-export const albert = Albert_Sans({
-	subsets: ['latin'],
-  display: 'swap',
-});
-
-export const quicksand = Quicksand({
+const quicksand = Quicksand({
 	subsets: ['latin'],
   display: 'swap',
 });
@@ -35,7 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={quicksand.className}>
 			<body>{children}</body>
-      {/* <body className={josefin.className}>{children}</body> */}
     </html>
   )
 }

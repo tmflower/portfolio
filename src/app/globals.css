@@ -10,6 +10,6 @@ body.dark {
 	@apply bg-[#2d2d2d] text-[#B9B7B7]
 }
 
-.nav {
+.nav, .footer, .btnSmall {
 	@apply text-[#B9B7B7]
 }

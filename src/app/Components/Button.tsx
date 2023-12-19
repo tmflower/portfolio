@@ -1,12 +1,12 @@
 import { FunctionComponent } from "react";
 
-interface CardProps {
+interface ButtonProps {
 	children: React.ReactNode;
 	onClick: () => void;
 	className: string;
 }
 
-const Button: FunctionComponent<CardProps> = ({
+const Button: FunctionComponent<ButtonProps> = ({
 	children,
 	onClick,
 	className,

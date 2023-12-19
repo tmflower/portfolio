@@ -10,7 +10,7 @@ import NavItem from "./NavItem";
 
 const Nav: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
   return (
-    <ul className="nav flex flex-row justify-between items-center bg-[#6d597a] px-6 pt-1 w-screen fixed -mt-4 z-10">
+    <ul className="nav flex flex-row justify-between items-center bg-[#6d597a] brightness-150 dark:brightness-100 px-6 pt-1 w-screen fixed -mt-4 z-10">
       <li>
         <button
           onClick={goHome}

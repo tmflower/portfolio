@@ -2,6 +2,7 @@
 import { useState, FunctionComponent, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import { Transition } from '@headlessui/react';
 
 import Card from "./Components/Card";
 import Artifacts from "./Components/Artifacts";
@@ -13,7 +14,7 @@ import ToggleOn from "../app/Components/images/ToggleOn.svg";
 import ToggleOff from "../app/Components/images/ToggleOff.svg";
 
 const Home: FunctionComponent = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [showArtifacts, setShowArtifacts] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showContact, setShowContact] = useState(false);
@@ -60,9 +61,49 @@ const Home: FunctionComponent = () => {
 
             <p className="-mt-3 text-xs">Light/Dark</p>
           </div>
-          {showArtifacts ? <Artifacts goHome={goHome}></Artifacts> : null}
-          {showAbout ? <About goHome={goHome}></About> : null}
-          {showContact ? <Contact goHome={goHome}></Contact> : null}
+
+
+					<Transition
+				appear={true}
+        show={showArtifacts}
+        className="transition-all rounded-3xl"
+        enter="transition-scale duration-700"
+        enterFrom="transform scale-50 opacity-0 max-h-0"
+        enterTo="transform scale-100 opacity-100 max-h-[1000px]"
+				leave="transition-scale duration-700"
+        leaveFrom="transform scale-100 opacity-100 max-h-[1000px]"
+        leaveTo="transform scale-50 opacity-0 max-h-0"
+      >
+				<Artifacts goHome={goHome}></Artifacts>
+      </Transition>
+
+			<Transition
+				appear={true}
+        show={showAbout}
+        className="transition-all rounded-3xl"
+        enter="transition-scale duration-700"
+        enterFrom="transform scale-50 opacity-0 max-h-0"
+        enterTo="transform scale-100 opacity-100 max-h-[1000px]"
+				leave="transition-scale duration-700"
+        leaveFrom="transform scale-100 opacity-100 max-h-[1000px]"
+        leaveTo="transform scale-50 opacity-0 max-h-0"
+      >
+				<About goHome={goHome}></About>
+      </Transition>
+
+			<Transition
+				appear={true}
+        show={showContact}
+        className="transition-all rounded-3xl"
+        enter="transition-scale duration-700"
+        enterFrom="transform scale-50 opacity-0 max-h-0"
+        enterTo="transform scale-100 opacity-100 max-h-[1000px]"
+				leave="transition-scale duration-700"
+        leaveFrom="transform scale-100 opacity-100 max-h-[1000px]"
+        leaveTo="transform scale-50 opacity-0 max-h-0"
+      >
+				<Contact goHome={goHome}></Contact>
+      </Transition>
 
           {!showArtifacts && !showAbout && !showContact ? (
             <>
