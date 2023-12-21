@@ -21,8 +21,8 @@ const About: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
           {content.about.skills.heading}
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4 pb-4 text-[#6d597a] brightness-150 dark:brightness-175">
-          {content.about.skills.skills.map((s) => (
-            <li className="text-sm sm:text-lg md:text-2xl">{s}</li>
+          {content.about.skills.skills.map((s, i) => (
+            <li key={i} className="text-sm sm:text-lg md:text-2xl">{s}</li>
           ))}
         </ul>
       </div>
@@ -33,8 +33,8 @@ const About: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
           {content.about.values.heading}
         </p>
         <ul className="flex flex-col list-disc mx-6">
-          {content.about.values.values.map((s) => (
-            <li className="text-sm sm:text-lg md:text-2xl py-3">{s}</li>
+          {content.about.values.values.map((v, i) => (
+            <li key={i} className="text-sm sm:text-lg md:text-2xl py-3">{v}</li>
           ))}
         </ul>
       </div>
