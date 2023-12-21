@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 body {
-	@apply bg-[#e7e7e7] text-[#292727]
+  @apply bg-[#e7e7e7] text-[#292727];
 }
 
 body.dark {
-	@apply bg-[#2d2d2d] text-[#B9B7B7]
+  @apply bg-[#2d2d2d] text-[#B9B7B7];
 }
 
-.nav, .footer, .btnSmall {
-	@apply text-[#B9B7B7]
+.nav,
+.footer,
+.btnSmall {
+  @apply text-[#B9B7B7];
 }

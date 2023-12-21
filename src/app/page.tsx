@@ -53,7 +53,7 @@ const Home: FunctionComponent = () => {
           >
             {showArtifacts || showAbout || showContact ? (
               <Button onClick={goHome} className="border-none md:text-xl">
-                ← Back
+                {"\u21E6"} Back
               </Button>
             ) : null}
 
