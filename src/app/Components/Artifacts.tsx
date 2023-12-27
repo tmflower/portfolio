@@ -26,7 +26,7 @@ import caregivers from "./images/caregivers.png";
 const Artifacts: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
   return (
     <div className="flex flex-col items-center pb-24">
-      <h1 className=" text-4xl md:text-7xl text-center mb-6">My Work</h1>
+      <h1 className="text-4xl md:text-7xl text-center mb-6">My Work</h1>
       <div className="w-full flex flex-col items-center">
         <Artifact
           title={content.artifact1.title}

@@ -43,7 +43,7 @@ const Home: FunctionComponent = () => {
       </Head>
       <main>
         <Nav goHome={goHome}></Nav>
-        <div className="h-screen mb-12 mx-12 md:mx-18 lg:mx-36">
+        <div className="h-screen mb-12 mx-4 sm:mx-12 md:mx-18 lg:mx-36">
           <div
             className={
               showArtifacts || showAbout || showContact

@@ -32,7 +32,7 @@ const Artifact: FunctionComponent<ArtifactProps> = ({
   link,
 }) => {
   return (
-    <div className="p-8 my-6 md:my-20 md:w-4/5 bg-[#f5f2f2] dark:bg-[#575656] border-0 shadow-[0_35px_60px_-15px] dark:shadow-none dark:border-[1px] dark:border-[#B9B7B7] rounded-xl flex flex-col">
+    <div className="p-4 sm:p-8 my-6 md:my-20 md:w-4/5 bg-[#f5f2f2] dark:bg-[#575656] border-0 shadow-[0_35px_60px_-15px] dark:shadow-none dark:border-[1px] dark:border-[#B9B7B7] rounded-xl flex flex-col">
       <h3 className="text-2xl md:text-4xl mb-4 font-bold text-center">
         {title}
       </h3>
