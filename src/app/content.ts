@@ -73,7 +73,7 @@ const content = {
         "Quality mentorship and feedback from senior engineers",
         "The opportunity to pair program with more experienced developers",
         "A culture that feels inclusive of people from all backgrounds",
-        "The ability to work remotely, as I do not wish to relocate. (That said, I also find great value in face-to-face interaction and would be happy to travel periodically for in-person events.",
+        "The ability to work remotely, as I do not wish to relocate. (That said, I also find great value in face-to-face interaction and would be happy to travel periodically for in-person events.)",
       ],
     },
   },
