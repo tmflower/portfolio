@@ -166,9 +166,6 @@ const Artifacts: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
           techStack={content.artifact4.techStack}
           link={content.artifact4.link}
         >
-          <div className="btnSmall border-2 dark:border-[#B9B7B7] rounded-full px-4 py-1 mt-4 mb-8 w-[260px] self-center mt-8 shadow-xl text-lg text-center">
-            Coming soon
-          </div>
         </Artifact>
 
         <Button onClick={goHome} className="md:text-xl">

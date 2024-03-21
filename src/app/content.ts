@@ -30,7 +30,7 @@ const content = {
       "Designed and built UI and signup functionality for Heartbeats, a greenfield single-page web application making grief support services accessible to the general public. Signup flow consists of: passwordless authentication using Auth0's Authentication API, an intake form for self-referred users, a welcome text sent using Twilio's Conversations API, and a notification sent to a grief navigator that a new referral has been assigned. Following signup, grief navigators can access referral intake information and continue communicating via text message on Heartbeats' partner app, Carehub (see next item below).",
     techStack:
       "React, Typescript, Tailwind, Next.js, Postgres, Wundergraph, GraphQL",
-    link: "",
+    link: "https://care.missingpiecesgrief.org/heartbeats",
   },
   artifact5: {
     title: "CareHub Features & Components",
