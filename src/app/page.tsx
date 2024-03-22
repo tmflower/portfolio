@@ -16,7 +16,7 @@ import Button from "./Components/Button";
 
 const Home: FunctionComponent = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [showArtifacts, setShowArtifacts] = useState(false);
+  const [showArtifacts, setShowArtifacts] = useState(true);
   const [showAbout, setShowAbout] = useState(false);
   const [showContact, setShowContact] = useState(false);
 
@@ -53,7 +53,7 @@ const Home: FunctionComponent = () => {
           >
             {showArtifacts || showAbout || showContact ? (
               <Button onClick={goHome} className="border-none md:text-xl">
-                {"\u21E6"} Back
+                {"\u21E6"} More
               </Button>
             ) : null}
 

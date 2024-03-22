@@ -6,6 +6,7 @@ import LinkedIn from "./images/Linkedin.svg";
 import Github from "./images/Github.svg";
 import Email from "./images/Email.svg";
 import Flower from "./images/Flower.png";
+import Button from "./Button";
 
 const Contact: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
   return (
@@ -62,6 +63,9 @@ const Contact: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
           style={{ filter: "invert(50%)" }}
         ></Image>
       </Link>
+			<Button onClick={goHome} className="md:text-xl">
+        {"\u21E6"} Back
+      </Button>
     </div>
   );
 };
