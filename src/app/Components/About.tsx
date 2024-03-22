@@ -3,7 +3,7 @@ import { FunctionComponent } from "react";
 import content from "../content";
 import Button from "./Button";
 import Image from "next/image";
-import nawahine from "./images/nawahine.jpg";
+import nawahine from "./images/nawahineokekai.jpg";
 
 const About: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
   return (
