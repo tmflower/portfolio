@@ -16,7 +16,7 @@ const NavItem: FunctionComponent<NavItemProps> = ({
   children,
 }) => {
   return (
-    <li className="py-4 px-2 md:px-4">
+    <li className="py-4 px-2 md:px-4 hover:scale-110">
       <Link href={link} target="_blank">
         <Image
           src={img}

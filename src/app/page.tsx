@@ -65,11 +65,17 @@ const Home: FunctionComponent = () => {
                     width={60}
                     alt="toggle switch on"
                     style={{ filter: "invert(70%)" }}
+                    className="hover:scale-105"
                   />
                 </button>
               ) : (
                 <button onClick={toggleDarkMode}>
-                  <Image src={ToggleOff} width={60} alt="toggle switch off" />
+                  <Image
+                    src={ToggleOff}
+                    width={60}
+                    alt="toggle switch off"
+                    className="hover:scale-105"
+                  />
                 </button>
               )}
 

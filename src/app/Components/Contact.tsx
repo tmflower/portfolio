@@ -42,12 +42,12 @@ const Contact: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
       <p className="text-center mt-4 filter">
         I built this portfolio with React, TypeScript, Tailwind, and NextJS.
       </p>
-      <Link
+      {/* <Link
         href="https://github.com/tmflower/portfolio"
         target="_blank"
         className="mt-2 hover:scale-110"
-      >
-        <Image
+      > */}
+        {/* <Image
           src={Flower}
           alt="flower icon"
           width={20}
@@ -61,8 +61,8 @@ const Contact: FunctionComponent<{ goHome: () => void }> = ({ goHome }) => {
           width={20}
           className="inline mb-1 ml-1"
           style={{ filter: "invert(50%)" }}
-        ></Image>
-      </Link>
+        ></Image> */}
+      {/* </Link> */}
 			<Button onClick={goHome} className="md:text-xl">
         {"\u21E6"} Back
       </Button>
